@@ -1,0 +1,67 @@
+.ecopulse-page { display: grid; gap: 2rem; padding-bottom: 3rem; }
+.ecopulse-header { display: flex; align-items: flex-end; justify-content: space-between; gap: 1.5rem; }
+.ecopulse-header h1 { margin: 0.35rem 0 0.5rem; font-size: clamp(2rem, 4vw, 2.8rem); }
+.ecopulse-header > div > p:last-child { max-width: 42rem; }
+.ecopulse-freshness { flex: 0 0 auto; font-size: 0.78rem; }
+.ecopulse-section { display: grid; gap: 1rem; }
+.ecopulse-section-heading { display: flex; align-items: flex-end; justify-content: space-between; gap: 1rem; }
+.ecopulse-section-heading h2 { font-size: 1.28rem; margin-bottom: 0.3rem; }
+.ecopulse-section-heading p { font-size: 0.86rem; }
+.ecopulse-metric-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 0.8rem; }
+.ecopulse-metric { display: flex; flex-direction: column; gap: 0.45rem; min-width: 0; padding: 1rem; }
+.ecopulse-metric > span { color: var(--muted); font-size: 0.78rem; line-height: 1.4; min-height: 2.2em; }
+.ecopulse-metric > strong { color: var(--forest-800); font-size: 1.55rem; line-height: 1.15; overflow-wrap: anywhere; }
+.ecopulse-metric small, .ecopulse-insight small { color: var(--muted); font-size: 0.75rem; line-height: 1.5; }
+.ecopulse-inline-note { font-size: 0.82rem; }
+.ecopulse-two-column { display: grid; grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr); gap: 1.5rem; }
+.ecopulse-panel { display: grid; align-content: start; gap: 0.8rem; min-width: 0; }
+.ecopulse-panel .chart-panel { margin: 0; padding: 1rem; }
+.ecopulse-panel .chart-header { display: flex; align-items: center; justify-content: space-between; gap: 0.75rem; margin-bottom: 0.5rem; }
+.ecopulse-panel .chart-header h3 { font-size: 0.95rem; }
+.ecopulse-panel .chart-chip { border-radius: 999px; padding: 0.2rem 0.5rem; background: var(--surface-alt); color: var(--forest-700); font-size: 0.68rem; font-weight: 700; }
+.ecopulse-booking-list { overflow: hidden; }
+.ecopulse-booking-row { display: flex; align-items: center; justify-content: space-between; gap: 1rem; padding: 0.9rem 1rem; border-bottom: 1px solid var(--stroke); }
+.ecopulse-booking-row:last-child { border-bottom: 0; }
+.ecopulse-booking-row > div { display: grid; gap: 0.25rem; min-width: 0; }
+.ecopulse-booking-row strong { color: var(--text); font-size: 0.84rem; }
+.ecopulse-booking-row span { color: var(--muted); font-size: 0.75rem; }
+.ecopulse-booking-value { text-align: right; flex: 0 0 auto; }
+.ecopulse-insight-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0.8rem; }
+.ecopulse-insight { display: grid; align-content: start; gap: 0.7rem; padding: 1rem; }
+.ecopulse-insight h3 { font-size: 1rem; }
+.ecopulse-insight p { font-size: 0.82rem; }
+.ecopulse-insight p strong { display: block; margin-bottom: 0.2rem; color: var(--text); font-size: 0.75rem; }
+.ecopulse-state-tag { justify-self: start; border-radius: 999px; padding: 0.22rem 0.55rem; background: var(--surface-alt); color: var(--forest-800); font-size: 0.68rem; font-weight: 700; }
+.ecopulse-state-tag.insufficient-data { background: var(--warning-bg); color: #755b1b; }
+.ecopulse-simulator { display: grid; grid-template-columns: minmax(0, 1fr) minmax(16rem, 0.72fr); gap: 1.25rem; padding: 1.25rem; }
+.ecopulse-simulator-form { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0.9rem; align-content: start; }
+.ecopulse-inventory-note { display: grid; gap: 0.25rem; grid-column: 1 / -1; padding: 0.8rem; border-radius: 8px; background: var(--surface-muted); font-size: 0.8rem; }
+.ecopulse-inventory-note strong { color: var(--text); }
+.ecopulse-inventory-note span { color: var(--muted); line-height: 1.5; }
+.ecopulse-form-error { grid-column: 1 / -1; color: #a33a3a; font-size: 0.82rem; }
+.ecopulse-simulator-form button { justify-self: start; }
+.ecopulse-scenario-result { display: grid; align-content: start; gap: 0.65rem; padding: 1rem; border-left: 1px solid var(--stroke); }
+.ecopulse-scenario-result h3 { margin-bottom: 0.2rem; font-size: 0.95rem; }
+.ecopulse-scenario-result > div { display: flex; justify-content: space-between; gap: 1rem; padding-bottom: 0.45rem; border-bottom: 1px solid var(--stroke); font-size: 0.8rem; }
+.ecopulse-scenario-result > div strong { color: var(--text); white-space: nowrap; }
+.ecopulse-scenario-result small { color: var(--muted); font-size: 0.75rem; line-height: 1.5; }
+.ecopulse-empty, .ecopulse-state { padding: 1.3rem; color: var(--muted); }
+.ecopulse-empty h2 { margin-bottom: 0.45rem; font-size: 1.15rem; }
+.ecopulse-error { border: 1px solid #efd1ce; border-radius: var(--radius-md); background: var(--danger-bg); color: #a33a3a; }
+@media (max-width: 980px) {
+  .ecopulse-metric-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .ecopulse-two-column { grid-template-columns: 1fr; }
+  .ecopulse-insight-grid { grid-template-columns: 1fr; }
+}
+@media (max-width: 640px) {
+  .ecopulse-header { align-items: flex-start; flex-direction: column; gap: 0.5rem; }
+  .ecopulse-freshness { font-size: 0.72rem; }
+  .ecopulse-metric-grid { grid-template-columns: 1fr 1fr; }
+  .ecopulse-metric { padding: 0.8rem; }
+  .ecopulse-metric > strong { font-size: 1.25rem; }
+  .ecopulse-simulator { grid-template-columns: 1fr; padding: 0.9rem; }
+  .ecopulse-simulator-form { grid-template-columns: 1fr; }
+  .ecopulse-scenario-result { border-left: 0; border-top: 1px solid var(--stroke); padding: 1rem 0 0; }
+  .ecopulse-booking-row { align-items: flex-start; }
+  .ecopulse-booking-row > div:first-child { overflow-wrap: anywhere; }
+}

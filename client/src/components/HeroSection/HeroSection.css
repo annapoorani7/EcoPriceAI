@@ -1,0 +1,243 @@
+.hero-shell {
+  position: relative;
+  overflow: hidden;
+  border-radius: 32px;
+  padding: 2.5rem;
+  color: #fff;
+  background: linear-gradient(135deg, #2e7d32 0%, #3b8e43 45%, #4fc3f7 100%);
+  box-shadow: 0 24px 60px -24px rgba(46, 125, 50, 0.35);
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at top left, rgba(255,255,255,0.25), transparent 35%);
+}
+
+.hero-grid {
+  position: relative;
+  display: grid;
+  gap: 2rem;
+  align-items: center;
+  grid-template-columns: 1.1fr 0.9fr;
+}
+
+.hero-copy {
+  max-width: 640px;
+}
+
+.hero-pill {
+  display: inline-block;
+  padding: 0.45rem 0.85rem;
+  border-radius: 999px;
+  margin-bottom: 1rem;
+  border: 1px solid rgba(255,255,255,0.3);
+  background: rgba(255,255,255,0.14);
+  backdrop-filter: blur(8px);
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.hero-copy h1 {
+  margin: 0;
+  font-size: clamp(2.2rem, 4vw, 3.4rem);
+  line-height: 1.08;
+  color: #fff;
+}
+
+.hero-description {
+  margin-top: 1rem;
+  max-width: 560px;
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: rgba(255,255,255,0.92);
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  margin-top: 1.5rem;
+}
+
+.hero-primary-btn,
+.hero-secondary-btn,
+.hero-card-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 999px;
+  padding: 0.85rem 1.2rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: transform 180ms ease, box-shadow 180ms ease;
+}
+
+.hero-primary-btn {
+  background: #ff9800;
+  color: #fff;
+}
+
+.hero-secondary-btn {
+  border: 1px solid rgba(255,255,255,0.45);
+  background: rgba(255,255,255,0.12);
+  color: #fff;
+}
+
+.hero-primary-btn:hover,
+.hero-secondary-btn:hover,
+.hero-card-btn:hover {
+  transform: translateY(-2px);
+}
+
+.hero-card {
+  position: relative;
+  border-radius: 24px;
+  padding: 1rem;
+  background: rgba(255,255,255,0.96);
+  box-shadow: 0 20px 45px -20px rgba(15, 44, 29, 0.35);
+}
+
+.hero-card-inner {
+  border-radius: 20px;
+  background: #f5f7f4;
+  padding: 1.1rem;
+}
+
+.hero-card-top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.hero-card-label {
+  margin: 0;
+  color: #2e7d32;
+  font-weight: 600;
+  font-size: 0.92rem;
+}
+
+.hero-card-top h2 {
+  margin: 0.25rem 0 0;
+  color: #163127;
+  font-size: 1.35rem;
+}
+
+.hero-badge {
+  display: inline-block;
+  border-radius: 999px;
+  background: rgba(255, 152, 0, 0.12);
+  color: #ff9800;
+  padding: 0.4rem 0.7rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.hero-perks {
+  display: grid;
+  gap: 0.7rem;
+  margin-top: 1rem;
+}
+
+.hero-perk-item {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  padding: 0.7rem 0.8rem;
+  border-radius: 14px;
+  background: #fff;
+  color: #163127;
+  font-size: 0.95rem;
+}
+
+.hero-check {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.9rem;
+  height: 1.9rem;
+  border-radius: 50%;
+  background: rgba(79, 195, 247, 0.16);
+  color: #2e7d32;
+  font-weight: 700;
+}
+
+.hero-card-footer {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.hero-card-price-label {
+  margin: 0;
+  color: rgba(22, 49, 39, 0.7);
+  font-size: 0.9rem;
+}
+
+.hero-card-price {
+  margin: 0.25rem 0 0;
+  font-size: 1.9rem;
+  font-weight: 700;
+  color: #163127;
+}
+
+.hero-card-btn {
+  border: none;
+  background: #2e7d32;
+  color: #fff;
+  cursor: pointer;
+}
+
+.hero-stats {
+  position: relative;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  margin-top: 1.5rem;
+}
+
+.hero-stat-card {
+  border-radius: 16px;
+  padding: 1rem;
+  border: 1px solid rgba(255,255,255,0.18);
+  background: rgba(255,255,255,0.12);
+  backdrop-filter: blur(8px);
+}
+
+.hero-stat-card p {
+  margin: 0;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.hero-stat-card span {
+  display: inline-block;
+  margin-top: 0.25rem;
+  color: rgba(255,255,255,0.9);
+  font-size: 0.9rem;
+}
+
+@media (max-width: 900px) {
+  .hero-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .hero-shell {
+    padding: 1.2rem;
+  }
+
+  .hero-stats {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-card-footer {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

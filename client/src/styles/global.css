@@ -1,0 +1,68 @@
+:root {
+  --forest-950: #092d22;
+  --forest-900: #103d2e;
+  --forest-800: #103d2e;
+  --forest-700: #18543e;
+  --forest-600: #24734f;
+  --forest-500: #2f8a5d;
+  --teal-600: #24734f;
+  --teal-500: #2f8a5d;
+  --bg-soft: #f3f4f0;
+  --surface: #ffffff;
+  --surface-alt: #eef4ef;
+  --surface-soft: #eef4ef;
+  --surface-muted: #f2f5f1;
+  --stroke: #dce6df;
+  --text: #102f25;
+  --muted: #5f7168;
+  --success: #24734f;
+  --danger: #b85750;
+  --success-bg: #e7f5ec;
+  --warning-bg: #fff8e6;
+  --danger-bg: #fff0ef;
+  --shadow-soft: 0 8px 24px rgba(16, 47, 37, 0.06);
+  --shadow-card: 0 4px 16px rgba(16, 47, 37, 0.04);
+  --radius-xl: 10px;
+  --radius-lg: 10px;
+  --radius-md: 10px;
+  --radius-sm: 8px;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  background: var(--bg-soft);
+  color: var(--text);
+  margin: 0;
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+}
+img { display: block; max-width: 100%; }
+a { color: inherit; text-decoration: none; }
+button, input, select, textarea { font: inherit; }
+button { cursor: pointer; }
+#root { min-height: 100vh; }
+h1, h2, h3, h4, h5, h6 { color: var(--text); line-height: 1.2; }
+p { color: var(--muted); line-height: 1.6; }
+.container { width: min(1200px, calc(100% - 1.5rem)); margin: 0 auto; }
+.page-shell { width: 100%; max-width: 1160px; margin: 0 auto; }
+.page-header-block h1 { font-size: clamp(2rem, 4vw, 3rem); letter-spacing: -0.03em; font-weight: 650; }
+.page-header-block .soft-badge { background: transparent; border: 0; padding: 0; color: var(--forest-500); font-size: 0.72rem; letter-spacing: 0.14em; text-transform: uppercase; }
+.section-card { background: var(--surface); border: 1px solid var(--stroke); border-radius: var(--radius-xl); box-shadow: var(--shadow-card); }
+.primary-btn, .secondary-btn, .success-btn, .danger-btn, .outline-btn { display: inline-flex; align-items: center; justify-content: center; gap: 0.625rem; border-radius: 10px; border: 1px solid transparent; padding: 0.8rem 1.2rem; font-weight: 600; transition: transform 0.2s ease, background-color 0.2s ease, border-color 0.2s ease; }
+.primary-btn:hover, .secondary-btn:hover, .success-btn:hover, .danger-btn:hover, .outline-btn:hover { transform: translateY(-1px); }
+.primary-btn { background: var(--forest-800); color: #ffffff; }
+.secondary-btn, .success-btn { background: var(--forest-700); color: #ffffff; }
+.danger-btn { background: #fff0ef; color: var(--danger); border-color: #efd1ce; }
+.outline-btn { background: var(--surface); border-color: var(--stroke); color: var(--text); }
+.soft-badge { display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.45rem 0.8rem; border-radius: 999px; background: var(--surface-soft, #eef4ef); color: var(--forest-800); border: 1px solid var(--stroke); font-size: 0.75rem; font-weight: 700; letter-spacing: 0.02em; }
+.card-grid { display: grid; gap: 1.25rem; }
+.field-wrap { display: flex; flex-direction: column; gap: 0.5rem; }
+.field-wrap label { font-size: 0.82rem; font-weight: 600; color: var(--muted); }
+.field-wrap input, .field-wrap select, .field-wrap textarea { width: 100%; appearance: none; border: 1px solid var(--stroke); background: var(--surface); border-radius: 10px; padding: 0.82rem 0.9rem; color: var(--text); transition: border-color 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease; }
+.field-wrap input:focus, .field-wrap select:focus, .field-wrap textarea:focus { outline: none; border-color: var(--forest-600); box-shadow: 0 0 0 3px rgba(36, 115, 79, 0.12); background: var(--surface); }
+input::placeholder, textarea::placeholder { color: #84938b; }
+select option { background: var(--surface); color: var(--text); }
+.empty-state, .loading-state, .error-state { display: flex; align-items: center; justify-content: center; min-height: 180px; border: 1px dashed var(--stroke); border-radius: 16px; background: var(--surface); }
+@media (max-width: 767px) { .page-shell { max-width: 100%; } }

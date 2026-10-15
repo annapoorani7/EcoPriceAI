@@ -1,0 +1,149 @@
+.home-page {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  padding: 1rem;
+}
+
+.home-card,
+.home-cta {
+  border-radius: 32px;
+  border: 1px solid #e4ece3;
+  background: #fff;
+  box-shadow: 0 20px 45px -24px rgba(22, 49, 39, 0.16);
+}
+
+.home-card {
+  padding: 1.35rem;
+}
+
+.home-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.section-label {
+  margin: 0;
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: #4fc3f7;
+}
+
+.section-label.alt {
+  color: #ff9800;
+}
+
+.home-card-header h2,
+.home-cta h3 {
+  margin: 0.4rem 0 0;
+  color: #163127;
+}
+
+.ghost-btn {
+  border: none;
+  border-radius: 999px;
+  padding: 0.8rem 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 180ms ease;
+  background: #f3f7f2;
+  color: #2e7d32;
+}
+
+.ghost-btn.light {
+  background: #fff;
+  color: #2e7d32;
+}
+
+.ghost-btn:hover {
+  transform: translateY(-2px);
+}
+
+.feature-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.feature-card {
+  border-radius: 24px;
+  padding: 1rem;
+  background: linear-gradient(135deg, #f7fbf7 0%, #fef8ee 100%);
+  border: 1px solid #e6efe7;
+}
+
+.feature-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.8rem;
+  height: 2.8rem;
+  border-radius: 50%;
+  background: #fff;
+  margin-bottom: 0.8rem;
+  font-size: 1.2rem;
+}
+
+.feature-card h3 {
+  margin: 0;
+  color: #163127;
+  font-size: 1.05rem;
+}
+
+.feature-card p {
+  margin: 0.45rem 0 0;
+  color: #4b5f55;
+  line-height: 1.6;
+}
+
+.home-cta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.2rem 1.3rem;
+  background: linear-gradient(135deg, #2e7d32 0%, #3b8e43 100%);
+  color: #fff;
+}
+
+.home-cta h3 {
+  color: #fff;
+}
+
+.home-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.2rem 0.2rem 0.4rem;
+  color: #678175;
+  font-size: 0.95rem;
+}
+
+@media (max-width: 900px) {
+  .feature-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 640px) {
+  .home-page {
+    padding: 0.7rem;
+  }
+
+  .home-card-header,
+  .home-cta,
+  .home-footer {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .feature-grid {
+    grid-template-columns: 1fr;
+  }
+}

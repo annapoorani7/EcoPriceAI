@@ -1,0 +1,71 @@
+.dynamic-pricing-page {
+  padding: 1.5rem 0 3rem;
+}
+
+.pricing-intro {
+  max-width: 52rem;
+  margin-top: 0.5rem;
+  font-size: 1.05rem;
+}
+
+.pricing-layout {
+  display: grid;
+  grid-template-columns: minmax(260px, 0.8fr) minmax(0, 1.4fr);
+  gap: 1.25rem;
+  align-items: start;
+}
+
+.pricing-form,
+.pricing-results { min-width: 0; }
+.pricing-form { padding: 1.5rem; box-shadow: none; }
+.pricing-form h2,
+.pricing-results h2 { margin-bottom: 1rem; font-size: 1.4rem; }
+.pricing-fields { display: grid; gap: 0.65rem; }
+.pricing-fields label { color: var(--muted); font-size: 0.82rem; font-weight: 600; }
+.pricing-fields select,
+.pricing-fields input { width: 100%; border: 1px solid var(--stroke); border-radius: 10px; padding: 0.78rem; background: var(--surface-alt); color: var(--text); }
+.pricing-submit { width: 100%; margin-top: 0.5rem; }
+.pricing-result-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; }
+.pricing-result-card { padding: 1.25rem; box-shadow: none; }
+.pricing-result-card:nth-child(2) { background: var(--surface-soft); border-color: var(--forest-600); }
+.pricing-result-card:nth-child(2) p,
+.pricing-result-card:nth-child(2) strong { color: var(--forest-900); }
+.pricing-result-card p { font-size: 0.82rem; margin-bottom: 0.65rem; }
+.pricing-result-card strong { color: var(--forest-800); font-size: 1.55rem; }
+.pricing-placeholder { padding: 1.5rem; color: var(--muted); background: var(--surface); border-color: var(--stroke); }
+
+.pricing-step {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  color: var(--forest-800);
+  margin-top: 0.8rem;
+  font-size: 0.88rem;
+  font-weight: 700;
+}
+
+.pricing-step span { color: var(--forest-600); font-size: 0.72rem; letter-spacing: 0.08em; }
+
+.pricing-note {
+  grid-column: 1 / -1;
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+
+@media (max-width: 760px) {
+  .pricing-layout { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 480px) {
+  .pricing-result-grid { grid-template-columns: 1fr; }
+}
+
+.pricing-feedback {
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+  background: var(--surface-alt);
+  color: var(--muted);
+  font-size: 0.875rem;
+}
+
+.pricing-error { color: var(--danger); }

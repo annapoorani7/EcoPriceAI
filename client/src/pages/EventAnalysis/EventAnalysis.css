@@ -1,0 +1,167 @@
+.event-analysis-page {
+  padding: 1.5rem 0 3rem;
+}
+
+.event-intro {
+  margin-top: 0.5rem;
+  font-size: 1.05rem;
+}
+
+.event-state span {
+  display: block;
+  margin-top: 0.35rem;
+}
+
+.event-state {
+  margin-bottom: 2rem;
+  padding: 1rem;
+  border: 1px solid var(--stroke);
+  border-radius: 8px;
+  background: var(--surface);
+  color: var(--muted);
+  text-align: center;
+}
+
+.event-error {
+  color: var(--danger);
+}
+
+.event-analysis-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.event-analysis-container h2 {
+  color: #2c3e50;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+}
+
+.analysis-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.analysis-card {
+  background-color: var(--surface);
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  border: 1px solid var(--stroke);
+  box-shadow: none;
+}
+
+.analysis-card h3 {
+  color: #7f8c8d;
+  font-size: 0.9rem;
+  margin: 0 0 1rem 0;
+  font-weight: 500;
+}
+
+.stat-value {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #2c3e50;
+  margin: 0;
+}
+
+.stat-value.positive {
+  color: #27ae60;
+}
+
+.events-list-section {
+  background-color: var(--surface);
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: none;
+  margin-bottom: 2rem;
+}
+
+.events-list-section h3 {
+  color: #2c3e50;
+  margin-top: 0;
+}
+
+.events-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+.events-table thead {
+  background-color: #f8f9fa;
+}
+
+.events-table th {
+  padding: 1rem;
+  text-align: left;
+  color: #2c3e50;
+  font-weight: 600;
+  border-bottom: 2px solid #ecf0f1;
+}
+
+.events-table td {
+  padding: 1rem;
+  border-bottom: 1px solid #ecf0f1;
+  color: #555;
+}
+
+.events-table tbody tr:hover {
+  background-color: #f8f9fa;
+}
+
+.occupancy-badge,
+.impact-badge {
+  padding: 0.4rem 0.8rem;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  font-weight: bold;
+  display: inline-block;
+}
+
+.occupancy-badge {
+  background-color: #fef5e7;
+  color: #d68910;
+}
+
+.impact-badge.positive {
+  background-color: #d5f4e6;
+  color: #27ae60;
+}
+
+.chart-section {
+  background-color: var(--surface);
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: none;
+}
+
+.events-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.events-list-section .flex {
+  gap: 1rem;
+}
+
+@media (max-width: 768px) {
+  .events-cards-grid { grid-template-columns: 1fr; }
+  .analysis-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .events-table {
+    font-size: 0.9rem;
+  }
+
+  .events-table th,
+  .events-table td {
+    padding: 0.75rem;
+  }
+}

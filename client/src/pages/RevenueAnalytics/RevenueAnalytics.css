@@ -1,0 +1,170 @@
+.revenue-analytics-page {
+  padding: 1.5rem 0 3rem;
+}
+
+.revenue-analytics-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.revenue-analytics-container h2 {
+  color: #2c3e50;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+}
+
+.revenue-analytics-container h1 { margin-bottom: 0.5rem; }
+.analytics-intro { margin-bottom: 2rem; font-size: 1.05rem; }
+
+.analytics-intro,
+.analytics-helper {
+  color: #597066;
+}
+
+.analytics-helper {
+  margin-top: 0.5rem;
+  font-size: 0.8rem;
+}
+
+.analytics-state {
+  margin-bottom: 2rem;
+  padding: 1rem;
+  border: 1px solid var(--stroke);
+  border-radius: 8px;
+  background: var(--surface);
+  color: var(--muted);
+  text-align: center;
+}
+
+.analytics-error {
+  color: var(--danger);
+}
+
+.analytics-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.analytics-card {
+  background-color: var(--surface);
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  border: 1px solid var(--stroke);
+  box-shadow: none;
+}
+
+.analytics-card h4 {
+  color: #7f8c8d;
+  margin: 0 0 1rem 0;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.card-value {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #2c3e50;
+  margin: 0;
+}
+
+.card-value.positive {
+  color: #27ae60;
+}
+
+.revenue-charts {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+@media (max-width: 1024px) {
+  .revenue-charts {
+    grid-template-columns: 1fr;
+  }
+}
+
+.revenue-table-section {
+  background-color: var(--surface);
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: none;
+}
+
+.revenue-table-section h3 {
+  color: #2c3e50;
+  margin-top: 0;
+}
+
+.revenue-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+.revenue-table thead {
+  background-color: var(--surface-alt);
+}
+
+.revenue-table th {
+  padding: 1rem;
+  text-align: left;
+  color: #2c3e50;
+  font-weight: 600;
+  border-bottom: 2px solid #ecf0f1;
+}
+
+.revenue-table td {
+  padding: 1rem;
+  border-bottom: 1px solid #ecf0f1;
+  color: var(--muted);
+}
+
+.revenue-table tbody tr:hover {
+  background-color: #f8f9fa;
+}
+
+.revenue-cell {
+  font-weight: bold;
+  color: #27ae60;
+}
+
+.difference {
+  font-weight: bold;
+}
+
+.difference.positive {
+  color: #27ae60;
+}
+
+.difference.negative {
+  color: #e74c3c;
+}
+
+.occupancy-pill {
+  background-color: #d6eaf8;
+  color: #3498db;
+  padding: 0.4rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .analytics-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .revenue-table {
+    font-size: 0.9rem;
+  }
+
+  .revenue-table th,
+  .revenue-table td {
+    padding: 0.75rem;
+  }
+}

@@ -1,0 +1,23 @@
+.hotel-card img {
+  /* ensure consistent image rendering for non-tailwind consumers */
+  display: block;
+}
+
+.hotel-card {
+  border: 1px solid var(--stroke);
+  border-radius: var(--radius-lg);
+  box-shadow: none;
+}
+
+.hotel-card button:first-child { background: var(--forest-700); }
+.hotel-card button:last-child { background: transparent; color: var(--danger); border: 1px solid #f0cdd1; }
+
+.hotel-card-no-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 10rem;
+  background: var(--surface-alt);
+  color: var(--muted);
+  font-size: 0.85rem;
+}
